@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>林莹含的个人博客</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/total.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">导航切换</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">林莹含博客</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            作品展示<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="myCanvas.html">canvas系列</a></li>
+                        <li><a href="javascript:;">D3.js系列</a></li>
+                        <li><a href="javascript:;">其他作品</a></li>
+                    </ul>
+                </li>
+                <li><a href="myNote.html">学习笔记</a></li>
+                <li><a href="travel.html">我的足迹</a></li>
+                <li><a href="myIntroduction.html">个人介绍</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="submit" class="btn btn-default">查找</button>
+                </div>
+            </form>
+    </div>
+    </div>
+</nav>
+<div class="container">
+    <div id="section1">
+        <img src="../img/heben.jpeg" class="img-responsive">
+        <div class="font">
+           <p class="font1">欢迎来到</p>
+           <p class="font2">林莹含的博客</p>
+        </div>
+    </div>
+    <div id="section2">
+        <form class="login">
+            <fieldset>
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="text" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label>密&nbsp&nbsp&nbsp&nbsp码</label>
+                    <input type="password" placeholder="请输入密码">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox">记住密码</label>
+                    <button type="submit" class="btn btn-default">登入</button>
+                </div>
+            </fieldset>
+        </form>
+        <img src="../img/heben1.jpeg" class="img-responsive">
+    </div>
+</div>
+<footer>
+    <a href="index.html">林莹含的博客</a>
+    <p>@2016年 个人博客 <a>意见反馈</a>京ICP证130925103号</p>
+    <p>京公网安备10000000001号</p>
+</footer>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+    $('.font1').animate({
+        fontSize:'300%',
+        marginLeft:'50%'
+    },1000).animate({
+        marginLeft:'0%'
+    },1000);
+    $('.font2').animate({
+        fontSize:'300%',
+    },1000).animate({
+        marginLeft:'20%'
+    },1000);
+</script>
+</body>
+</html>

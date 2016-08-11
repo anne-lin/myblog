@@ -1,0 +1,25 @@
+body{
+    background-color:honeydew;
+    padding-top: 130px;
+}
+.row{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.row a{
+    text-decoration: none;
+    color: #99ffff;
+}
+.transition{
+    color: #000;
+    -webkit-transition: color 1s linear;
+    -moz-transition: color 1s linear;
+    -o-transition: color 1s linear;
+}
+.transition:hover{
+    color: #5FBEF9;
+}
+#canvas{
+    width:100%;
+    height: auto;
+}

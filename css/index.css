@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+#section1{
+    position: relative;
+}
+.font{
+    position: absolute;
+    left:12%;
+    top:40%;
+    width:30%;
+}
+.font1,.font2{
+    font-family: 华文行楷;
+    color: white;
+}
+.login{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 28%;
+    font-size: 20px;
+    font-family: 华文仿宋;
+}
+.login button{
+    margin-left: 70px;
+}

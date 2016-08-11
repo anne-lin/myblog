@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>旅游风景---林莹含的个人博客</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/total.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">导航切换</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">林莹含博客</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        作品展示<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="myCanvas.html">canvas系列</a></li>
+                        <li><a href="javascript:;">D3.js系列</a></li>
+                        <li><a href="javascript:;">其他作品</a></li>
+                    </ul>
+                </li>
+                <li><a href="myNote.html">学习笔记</a></li>
+                <li class="active"><a href="travel.html">我的足迹</a></li>
+                <li><a href="myIntroduction.html">个人介绍</a></li>
+               ></a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="submit" class="btn btn-default">查找</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <!--地图-->
+    <div id="map">
+        <script src="http://apps.bdimg.com/libs/d3/3.4.8/d3.min.js  "></script>
+        <script src="../js/map.js"></script>
+    </div>
+    <div>
+        <h2>沿途风景</h2>
+        <p>因为旅行，我爱上了摄影。因为摄影，我更爱旅行。</p>
+        <div class="row photos">
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                           <img src="../img/travel/hulunbeier.jpg" data-toggle="modal"
+                                data-target="#myModal1"/>
+                            <div class="caption">
+                                <h3>呼伦贝尔</h3>
+                                <p>2015.70.20<br>额尔古纳湿地公园</p>
+                            </div>
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                额尔古纳湿地公园
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/hulunbeier.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/dacaoyuan.jpg" data-toggle="modal"
+                                 data-target="#myModal2"/>
+                            <div class="caption">
+                                <h3>呼伦贝尔</h3>
+                                <p>2015.70.20<br>大草原</p>
+                            </div>
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                呼伦贝尔大草原
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/dacaoyuan.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/haerbin.jpg" data-toggle="modal"
+                                 data-target="#myModal3"/>
+                            <div class="caption">
+                                <h3>哈尔滨</h3>
+                                <p>2016.01.02<br>圣*索菲亚教堂</p>
+                            </div>
+                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                圣*索菲亚教堂
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/haerbin.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/sea.jpg" data-toggle="modal"
+                                 data-target="#myModal4"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2015.08.02<br>东洛岛_大海</p>
+                            </div>
+                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_大海
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/sea.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/xiyang1.jpg" data-toggle="modal"
+                                 data-target="#myModal5"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2015.08.02<br>东洛岛_夕阳</p>
+                            </div>
+                            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_夕阳
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/xiyang1.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/xiyang1.jpg"data-toggle="modal"
+                                 data-target="#myModal6"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2012.01.02<br>东洛岛_夕阳</p>
+                            </div>
+                            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_夕阳
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/xiyang1.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="row">
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/xiyang4.jpg"data-toggle="modal"
+                                 data-target="#myModal7"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2015.70.20<br>东洛岛_夕阳</p>
+                            </div>
+                            <div class="modal fade" id="myModal7" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_夕阳
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/xiyang4.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/xiyang3.jpg"
+                                 data-toggle="modal"
+                                 data-target="#myModal8"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2015.70.20<br>东洛岛_夕阳</p>
+                            </div>
+                            <div class="modal fade" id="myModal8" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_夕阳
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/xiyang3.jpg"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/chuan2.jpg" data-toggle="modal"
+                                 data-target="#myModal9"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2016.01.02<br>东洛岛_小竹筏</p>
+                            </div>
+                            <div class="modal fade" id="myModal9" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_小竹筏
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/chuan2.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/chuan.jpg"data-toggle="modal"
+                                 data-target="#myModal10"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2015.08.02<br>东洛岛_船</p>
+                            </div>
+                            <div class="modal fade" id="myModal10" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">
+                                                东洛岛_船
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/chuan.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="../img/travel/xiyang2.jpg"data-toggle="modal"
+                                 data-target="#myModal11"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2015.08.02<br>东洛岛_夕阳</p>
+                            </div>
+                            <div class="modal fade" id="myModal11" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛_夕阳
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/xiyang2.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                                <img src="../img/travel/xiyang1.jpg"data-toggle="modal"
+                                     data-target="#myModal12"/>
+                            <div class="caption">
+                                <h3>东洛岛</h3>
+                                <p>2012.01.02<br>东洛岛_夕阳</p>
+                            </div>
+                            <div class="modal fade" id="myModal12" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"
+                                                    data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">
+                                                东洛岛
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/travel/xiyang1.jpg" class="img-responsive"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">关闭
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<footer>
+    <a href="index.html">林莹含的博客</a>
+    <p>@2016年 个人博客 <a>意见反馈</a>京ICP证130925103号</p>
+    <p>京公网安备10000000001号</p>
+</footer>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

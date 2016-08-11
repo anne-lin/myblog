@@ -1,0 +1,19 @@
+body{
+    padding-top: 70px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+.navbar-brand{
+    font-family: 华文行楷;
+    font-size: 40px;
+    color: white;
+}
+.side{
+    position: fixed;
+    right:0;
+}
+.photos{
+    text-align: center;
+}
