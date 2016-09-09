@@ -18,9 +18,26 @@ body{
     position: absolute;
     margin-left: 10%;
     margin-top: 28%;
-    font-size: 20px;
     font-family: 华文仿宋;
 }
-.login button{
-    margin-left: 70px;
+@media (max-width:767px) {
+    .login{
+        font-size: 4px;
+    }
+    .login input{
+        width:60%;
+    }
+    .login button{
+        height:20%;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .login{
+        font-size: 20px;
+    }
+}
+@media (min-width:1200px) {
+    .login{
+        font-size: 20px;
+    }
 }

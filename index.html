@@ -83,17 +83,26 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $('.font1').animate({
-        fontSize:'300%',
-        marginLeft:'50%'
-    },1000).animate({
-        marginLeft:'0%'
-    },1000);
-    $('.font2').animate({
-        fontSize:'300%',
-    },1000).animate({
-        marginLeft:'20%'
-    },1000);
+    function move(size) {
+        $('.font1').animate({
+            fontSize:size,
+            marginLeft:'50%'
+        },1000).animate({
+            marginLeft:'0%'
+        },1000);
+        $('.font2').animate({
+            fontSize:size,
+        },1000).animate({
+            marginLeft:'20%'
+        },1000);
+    }
+    if($(window).width()>1200){
+        move("300%");
+    }else if($(window).width()>992){
+        move("200%");
+    }else{
+        move("50%");
+    }
 </script>
 </body>
 </html>
