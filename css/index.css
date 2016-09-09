@@ -27,8 +27,8 @@ body{
     .login input{
         width:60%;
     }
-    .login button{
-        height:20%;
+     .login button{
+        margin-left: 40%;
     }
 }
 @media (min-width:768px) and (max-width:991px) {
